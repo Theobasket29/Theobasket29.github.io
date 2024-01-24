@@ -8,6 +8,6 @@
 
 <body>
     <h2>Menu</h2>
-    <?php include "header.html";?>
+    <?php require "header.html";?>
 </body>
 </html>
