@@ -9,4 +9,5 @@
     <body>
         <h2>Site Stella</h2>
     </body>
+    <?php include "header.html";?>
 </html>
