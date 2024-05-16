@@ -1,0 +1,9 @@
+*{
+    font-family: Avenir, sans-serif;
+    font-size: 25px;    
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(135deg #5ec9aa, #b8f5e5);
+}
