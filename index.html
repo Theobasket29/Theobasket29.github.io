@@ -10,13 +10,39 @@
             <a href="./index.php"><img src="./Image/Logo-Entreprise.png" alt="EURL Stephane Blanco" class="logo"></a>
             <nav>
                 <ul>
-                    <li><a href="">Faux-Plafond</a></li>
-                    <li><a href="">Cloison</a></li>
-                    <li><a href="">Placo</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="./faux-plafond.php">Faux-Plafond</a></li>
+                    <li><a href="./cloison.php">Cloison</a></li>
+                    <li><a href="./placo.php">Placo</a></li>
+                    <li><a href="./contact.php">Contact</a></li>
                 </ul>
             </nav>
         </div>
+
+        <button onclick="creerNouvellePage()">Créer nouvelle Page</button>
+        <script>
+            function creerNouvellePage(){
+                var nouvellePage = window.open("", "_blanck");
+                var contenu = `
+                    <!DOCTYPE html>
+                    <html>
+                    <head>
+                        <title>Nouvelle Page</title>
+                    </head>
+                    <body>
+                        <h1>Je suis une nouvelle page</h1>
+                        <p> Page créer dynamiquement</p>
+                        <?php
+                            include_once("header.html");
+                        ?>
+                    </body>
+                    </html>
+                    `;
+                nouvellePage.document.write(contenu);
+                nouvellePage.document.close();
+
+                
+            }
+        </script>
     </body>
    
 </html>
