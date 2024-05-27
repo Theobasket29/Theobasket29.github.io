@@ -21,7 +21,7 @@
         <button onclick="creerNouvellePage()">Créer nouvelle Page</button>
         <script>
             function creerNouvellePage(){
-                var nouvellePage = window.open("", "_blanck");
+                var nouvellePage = window.open("", "_blank");
                 var contenu = `
                     <!DOCTYPE html>
                     <html>
@@ -31,9 +31,6 @@
                     <body>
                         <h1>Je suis une nouvelle page</h1>
                         <p> Page créer dynamiquement</p>
-                        <?php
-                            include_once("header.html");
-                        ?>
                     </body>
                     </html>
                     `;
